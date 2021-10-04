@@ -1,15 +1,19 @@
 import { ReactNode } from 'react';
+import styled from 'styled-components';
 
 interface Props {
   name: ReactNode;
 }
 
-const Header = ({name}: Props) => {
+const StyledHeder = styled.header`
+`
+
+const Header = ({ name }: Props) => {
   return (
     <>
-      <header>
-        <h1>{name}</h1>
-      </header>
+      <StyledHeder>
+        <h1>{ name }</h1>
+      </StyledHeder>
     </>
   )
 }
