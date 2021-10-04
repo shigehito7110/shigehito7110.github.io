@@ -1,5 +1,7 @@
+import Header from '@components/common/header';
+
 export default () => (
   <>
-    <h1>Shigehito Naito!!</h1>
+    <Header name='シゲヒトのマイページ'/>
   </>
 )
