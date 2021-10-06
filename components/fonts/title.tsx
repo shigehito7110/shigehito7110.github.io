@@ -6,10 +6,9 @@ interface Props {
 }
 
 const TitleHeading = styled.h1`
-  font-family: 'Palette Mosaic', cursive;
-  font-size: 4rem;
+  font-family: 'Amatic SC', cursive;
+  font-size: 6.5rem;
   color: #faf850;
-  text-shadow:0 5px 5px #000000;
 `
 
 const Title = ({name}: Props) => {

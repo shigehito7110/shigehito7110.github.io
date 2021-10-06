@@ -1,6 +1,7 @@
 import type { AppProps } from 'next/app';
 import Head from 'next/head';
 import { ThemeProvider, createGlobalStyle } from 'styled-components';
+import Layout from '@components/layout'
 
 export interface DTheme {
   margin: string;
@@ -13,7 +14,7 @@ export const theme: DTheme = {
   margin: '0',
   padding: '0',
   color: '#001f3f',
-  backgroundColor: '#ffffff',
+  backgroundColor: '#FFFFFF',
 }
 
 export interface ThemeWrapper {
@@ -26,6 +27,7 @@ const GlobalStyle = createGlobalStyle<ThemeWrapper>`
     padding:          ${props => props.theme.padding};
     color:            ${props => props.theme.color};
     background-color: ${props => props.theme.backgroundColor};
+    font-size: 62.5%;
   }
 `
 
@@ -34,10 +36,13 @@ const MyApp = ({ Component, pageProps }: AppProps) => {
     <>
       <ThemeProvider theme={theme}>
         <Head>
-          <link href="https://fonts.googleapis.com/css2?family=Palette+Mosaic&display=swap" rel="stylesheet" />
+          <link href="https://fonts.googleapis.com/css2?family=Amatic+SC&display=swap" rel="stylesheet" />
+          <link href="https://fonts.googleapis.com/css2?family=Monoton&display=swap" rel="stylesheet" />
         </Head>
         <GlobalStyle />
-        <Component {...pageProps} />
+        <Layout>
+          <Component {...pageProps} />
+        </Layout>
       </ThemeProvider>
     </>
   )
