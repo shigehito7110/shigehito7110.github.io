@@ -37,7 +37,7 @@ const MyApp = ({ Component, pageProps }: AppProps) => {
       <ThemeProvider theme={theme}>
         <Head>
           <link href="https://fonts.googleapis.com/css2?family=Amatic+SC&display=swap" rel="stylesheet" />
-          <link href="https://fonts.googleapis.com/css2?family=Monoton&display=swap" rel="stylesheet" />
+          <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet" />
         </Head>
         <GlobalStyle />
         <Layout>

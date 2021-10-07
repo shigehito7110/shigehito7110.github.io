@@ -12,13 +12,22 @@ const Common = styled.div`
   justify-content: space-between;
 `
 
+const Content = styled.div`
+  width: 70%;
+`
+
+const Main = styled.main`
+`
+
 const Layout: FC<Prop> = ({ children }) => {
   return (
     <>
       <Common>
-        <Header name={'welcome to mypage'}/>
+        <Content>
+          <Header name={'welcome to mypage'} />
+          <Main>{ children }</Main>
+        </Content>
         <SideBar />
-        { children }
       </Common>
     </>
   )
