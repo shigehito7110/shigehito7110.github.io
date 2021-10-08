@@ -1,6 +1,7 @@
 import styled from 'styled-components';
-import PromptMessage from '@components/fonts/promptMessage';
-import ConsoleForm from './consoleForm';
+import PromptMessage from '@components/atoms/fonts/promptMessage';
+import ConsoleForm from '@components/atoms/forms/consoleForm';
+import ConsoleOutBox from '@components/molecules/consoleOut';
 import { useState } from 'react';
 
 const ConsoleArea = styled.div`
@@ -19,10 +20,23 @@ const ConsoleArea = styled.div`
 
 const ConsoleBox = () => {
   const [command, setCommand] = useState('');
+  const [resultArg, setResultArg] = useState('');
 
   const onKeyPress = (e: any) => {
     if(e.charCode == 13) {
-      console.log(command);
+      switch(command) {
+        case 'help':
+        case 'who':
+        case 'portfolio':
+        case 'skills':
+        case 'clear':
+          setResultArg(command);
+          break;
+        default:
+          setResultArg('else');
+          break;
+      }
+
       setCommand('');
     }
   }
@@ -35,6 +49,13 @@ const ConsoleBox = () => {
         onKeyPress={onKeyPress}
         onChange={setCommand}
       />
+
+      {resultArg
+      &&
+      <ConsoleOutBox
+        arg={resultArg}
+      />}
+
     </ConsoleArea>
   )
 }

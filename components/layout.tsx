@@ -1,5 +1,5 @@
-import Header from '@components/common/header';
-import SideBar from '@components/common/sideBar';
+import Header from '@components/organisms/common/header';
+import SideBar from '@components/organisms/common/sideBar';
 import { FC } from 'react';
 import styled from 'styled-components';
 

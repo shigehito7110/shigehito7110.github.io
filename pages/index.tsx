@@ -1,4 +1,4 @@
-import ConsoleBox from "@components/common/consoleBox";
+import ConsoleBox from "@components/organisms/consoleBox";
 
 const App = () => {
   return (

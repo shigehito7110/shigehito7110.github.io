@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import NeumorSquareButton from '@components/buttons/neumorSquareButton';
+import NeumorSquareButton from '@components/atoms/buttons/neumorSquareButton';
 
 const Bar = styled.div`
   display:flex;

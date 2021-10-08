@@ -1,6 +1,6 @@
 import { ReactNode } from 'react';
 import styled from 'styled-components';
-import Title from '@components/fonts/title';
+import Title from '@components/atoms/fonts/title';
 
 interface Props {
   name: ReactNode;
