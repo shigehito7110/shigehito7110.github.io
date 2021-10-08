@@ -2,6 +2,7 @@ import type { AppProps } from 'next/app';
 import Head from 'next/head';
 import { ThemeProvider, createGlobalStyle } from 'styled-components';
 import Layout from '@components/layout'
+import '@fortawesome/fontawesome-svg-core/styles.css';
 
 export interface DTheme {
   margin: string;

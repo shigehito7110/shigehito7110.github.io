@@ -6,10 +6,6 @@ const StyledForm = styled.input`
   outline: none;
   font-family: 'Press Start 2P', cursive;
   font-size: 1rem;
-
-  // &:focus {
-  //   caret-color: rgba(0,0,0,0.2)
-  // }
 `
 
 const ConsoleForm = (props: {command: string, onKeyPress: (value: any) => void, onChange: (value: string) => void}) => {

@@ -10,7 +10,7 @@ const ConsoleOutBox = (props: {arg: string}) => {
       'Like: Movies, Snowbording, Eating, Sleeping',
       'From: Japan',
       'NickName: Shige',
-      'Message: welcomming mypage everyone!!I\'m pg and love various technology about programming'
+      'Message: welcome to mypage everyone!!I\'m pg and love various technologies'
     ],
     'help': [
       'help: show usage',

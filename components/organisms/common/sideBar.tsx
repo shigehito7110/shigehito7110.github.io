@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import NeumorSquareButton from '@components/atoms/buttons/neumorSquareButton';
+import NeumorSquareButton from '@components/molecules/buttons/neumorSquareButton';
 
 const Bar = styled.div`
   display:flex;
@@ -17,9 +17,9 @@ const SideBar = () => {
   return (
     <Bar>
       {
-        items.map((id) => {
+        items.map((item, id) => {
           return (
-            <NeumorSquareButton key={id}/>
+            <NeumorSquareButton key={id} item={item}/>
           )
         })
       }
