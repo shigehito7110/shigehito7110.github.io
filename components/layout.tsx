@@ -13,7 +13,11 @@ const Common = styled.div`
 `
 
 const Content = styled.div`
-  width: 70%;
+
+  width: 100%;
+  @media(min-width: 500px) {
+    width: 70%;
+  }
 `
 
 const Main = styled.main`
