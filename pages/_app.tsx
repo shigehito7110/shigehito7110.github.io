@@ -1,14 +1,15 @@
 import type { AppProps } from 'next/app';
-import Head from 'next/head';
 import { ThemeProvider, createGlobalStyle } from 'styled-components';
-import Layout from '@components/layout'
 import '@fortawesome/fontawesome-svg-core/styles.css';
+import Head from 'next/head';
+import Layout from '@components/layout'
 
 export interface DTheme {
-  margin: string;
-  padding: string;
-  color: string;
-  backgroundColor: string;
+  margin: string,
+  padding: string,
+  color: string,
+  backgroundColor: string,
+  fontSize: string,
 }
 
 export const theme: DTheme = {
@@ -16,6 +17,7 @@ export const theme: DTheme = {
   padding: '0',
   color: '#001f3f',
   backgroundColor: '#FFFFFF',
+  fontSize: '62.5%'
 }
 
 export interface ThemeWrapper {
@@ -28,7 +30,7 @@ const GlobalStyle = createGlobalStyle<ThemeWrapper>`
     padding:          ${props => props.theme.padding};
     color:            ${props => props.theme.color};
     background-color: ${props => props.theme.backgroundColor};
-    font-size: 62.5%;
+    font-size:        ${props => props.theme.fontSize};
   }
 `
 

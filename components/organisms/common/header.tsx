@@ -7,9 +7,14 @@ interface Props {
 }
 
 const StyledHeader = styled.header`
-  width: 100%;
   padding: 50px;
   background:rgba(0,0,0,0);
+
+  @media(min-width: 770px) {
+    width: 100%;
+    padding: 50px;
+    background:rgba(0,0,0,0);
+  }
 `
 
 const Header = ({ name }: Props) => {

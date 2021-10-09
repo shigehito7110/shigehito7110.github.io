@@ -1,5 +1,6 @@
 import Header from '@components/organisms/common/header';
 import SideBar from '@components/organisms/common/sideBar';
+import Footer from '@components/organisms/common/footer';
 import { FC } from 'react';
 import styled from 'styled-components';
 
@@ -13,7 +14,11 @@ const Common = styled.div`
 `
 
 const Content = styled.div`
-  width: 70%;
+  width: 100%;
+  
+  @media(min-width: 770px) {
+    width: 70%;
+  }
 `
 
 const Main = styled.main`
@@ -28,6 +33,7 @@ const Layout: FC<Prop> = ({ children }) => {
           <Main>{ children }</Main>
         </Content>
         <SideBar />
+        <Footer />
       </Common>
     </>
   )
