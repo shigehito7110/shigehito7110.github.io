@@ -23,7 +23,14 @@ jobs:
     - name: build
       run: npm run build
 
-    - name: start
-      run: npm run start
+    - name: export
+      run: npm run export
 
-      
+    - name: add nojekyll
+      run: touch .nojekyll
+
+    - name: deploy
+      uses: peaceiris/actions-gh-pages@v3
+      with:
+        github_token: ${{ secrets.GITHUB_TOKEN }}
+        publish_dir: ./out
