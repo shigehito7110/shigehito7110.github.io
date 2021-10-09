@@ -5,6 +5,7 @@ const Bar = styled.div`
   display:flex;
   flex-flow: column;
   margin 0 auto;
+  padding: 3rem 0;
 `
 
 const items = [
