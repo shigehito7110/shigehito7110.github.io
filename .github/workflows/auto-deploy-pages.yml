@@ -1,0 +1,29 @@
+name: github pages
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  build-deploy:
+    runs-on:
+      ubuntu-latest
+    steps:
+    - uses: actions/checkout@v1
+
+    - name: setup node
+      uses: actions/setup-node@v1
+      with:
+        node-version: '14.x'
+
+    - name: install
+      run: npm install --frozen-lockfile
+
+    - name: build
+      run: npm run build
+
+    - name: start
+      run: npm run start
+
+      

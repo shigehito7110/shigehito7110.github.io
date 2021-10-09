@@ -15,8 +15,8 @@ const NeumorBox = styled.div`
 
   &:active {
     background: #ffffff;
-    box-shadow: inset -1rem -1rem 5rem #d9d9d9,
-            inset 1rem 1rem 5rem #ffffff;
+    box-shadow: inset -0.3rem -0.3rem 1.6rem #b8b8b8,
+            inset 0.3rem 0.3rem 1.6rem #ffffff;
   }
 `
 
