@@ -10,10 +10,10 @@ const StyledHeader = styled.header`
   padding: 50px;
   background:rgba(0,0,0,0);
 
-  @media(min-width: 500px) {
+  @media(min-width: 770px) {
+    width: 100%;
     padding: 50px;
     background:rgba(0,0,0,0);
-    width: 100%;
   }
 `
 
